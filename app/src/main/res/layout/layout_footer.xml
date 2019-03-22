@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/footer_padding"
+        android:text="@string/footer_company_name"
+        android:textColor="@color/colorCompanyName"
+        android:textSize="@dimen/footer_text_size" />
+
+</LinearLayout>

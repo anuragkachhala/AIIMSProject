@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/company_name"
+        android:layout_below="@id/toolbar"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_header" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:typeface="serif"
+                android:textSize="@dimen/header_sub_title_text_size" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutName"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                style="@style/customTextInputLayout">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_applicant_name"
+                    style="@style/EditTextForm"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:hint="@string/label_reg_applicant_name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rg_father_husband"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_father"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="Father's Name" />
+
+                <RadioButton
+                    android:id="@+id/radio_husband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Husband's Name" />
+
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutFatherName"
+                style="@style/customTextInputLayout"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_applicant_father_name"
+                    style="@style/EditTextForm"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutMotherName"
+                style="@style/customTextInputLayout"
+                app:counterEnabled="true"
+                app:counterMaxLength="50">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_applicant_mother_name"
+                    style="@style/EditTextForm"
+                    android:maxLength="50"
+                    android:inputType="textCapWords"
+                    android:hint="@string/label_reg_applicant_mother_name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_applicant_dob"
+                    style="@style/customTextView"
+                    android:hint="@string/label_reg_dob" />
+
+                <ImageView
+                    style="@style/customImageView"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_error_dob"
+                style="@style/FormErrorText"
+                android:text="@string/date_of_birth_error"
+                android:visibility="gone" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutDesignation"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_designation"
+                    style="@style/EditTextForm"
+                    android:maxLength="25"
+                    android:inputType="textCapWords"
+                    android:hint= "@string/designation" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutGradePay"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_grade_pay"
+                    style="@style/EditTextForm"
+                    android:hint="@string/grade_pay"
+                    android:inputType="number"
+                    android:maxLength="5" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutDepartment"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_department"
+                    style="@style/EditTextForm"
+                    android:maxLength="40"
+                    android:inputType="textCapWords"
+                    android:hint="@string/department" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_date_of_joining"
+                    style="@style/customTextView"
+                    android:hint="@string/date_of_joining" />
+
+                <ImageView
+                    style="@style/customImageView"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_error_doj"
+                style="@style/FormErrorText"
+                android:text="@string/date_of_joining_error"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutPresentAddress"
+                style="@style/customTextInputLayout"
+                app:counterEnabled="true"
+                app:counterMaxLength="100">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_present_address"
+                    style="@style/EditTextForm"
+                    android:hint="@string/present_address"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:maxLength="100"
+                    android:singleLine="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkbox_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/tvFromLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/check_address" />
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutPermanentAddress"
+                style="@style/customTextInputLayout"
+                app:counterEnabled="true"
+                app:counterMaxLength="100">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_permanent_address"
+                    style="@style/EditTextForm"
+                    android:hint="@string/permanent_address"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:maxLength="100"
+                    android:singleLine="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutBodyIdentyMark"
+
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_body_identy_mark"
+                    style="@style/EditTextForm"
+                    android:maxLength="30"
+                    android:hint="@string/body_identification_marks" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+
+                android:id="@+id/sp_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:background="@drawable/form_et_bg"
+                android:entries="@array/blood_group"
+                android:padding="@dimen/etFormPadding"
+                android:spinnerMode="dialog" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutMobileNo"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_mobile_no"
+                    style="@style/EditTextForm"
+                    android:hint="@string/mobile_no"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutLandlineNo"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_landline_no"
+                    style="@style/EditTextForm"
+                    android:hint="@string/landline_no"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutEmergencyContact"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_emergency_contact"
+                    style="@style/EditTextForm"
+                    android:hint="@string/emergency_contact"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutEmailID"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_email_id"
+                    style="@style/EditTextForm"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/employment_type" />-->
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_employment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:background="@drawable/form_et_bg"
+                android:entries="@array/employment_type"
+                android:padding="@dimen/etFormPadding"
+                android:spinnerMode="dialog" />
+
+
+
+            <TextView
+                android:id="@+id/tv_error_employee_type"
+                style="@style/FormErrorText"
+                android:text="@string/err_select_employment_type"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutOtherEmpType"
+                android:visibility="gone"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_OtherEmpType"
+                    style="@style/EditTextForm"
+                    android:maxLength="15"
+                    android:inputType="textCapWords"
+                    android:hint= "Employment Type" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/for_project_employee" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutProjectName"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_project_name"
+                    style="@style/EditTextForm"
+                    android:maxLength="50"
+                    android:inputType="textCapWords"
+                    android:hint="@string/project_name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_applicant_tenure"
+                    style="@style/customTextView"
+                    android:hint="@string/tenure" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_error_tenure"
+                style="@style/FormErrorText"
+                android:text="@string/err_tenure"
+                android:visibility="gone" />
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/have_you_ever_received" />
+
+            <RadioGroup
+                android:id="@+id/rg_received_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutIfYesSelect"
+                style="@style/customTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_if_yes_select"
+                    style="@style/EditTextForm"
+                    android:hint="@string/if_yes" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_save_personal_details"
+                style="@style/customButtom"
+                android:text="@string/save_details"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/company_name"
+        layout="@layout/layout_footer"
+        android:textColor="@color/colorAccent" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

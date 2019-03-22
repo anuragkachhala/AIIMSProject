@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4db6ac</color>
+    <color name="colorPrimaryDark">#26a69a</color>
+    <color name="colorAccent">#4db6ac</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="colorGreen">#4c09a1</color>
+
+    <color name="colorFormHeading">#e5335c</color>
+
+    <color name="colorTvLabelFrom">#000000</color>
+
+    <color name="colorTvFromValue">#a8a8a8</color>
+
+    <color name="colorEtBg">#FFFFFF</color>
+
+    <color name="colorLayout">#FFB9D6D3</color>
+    <color name="colorDarkerGray">#A9A9A9</color>
+
+    <color name="ColorFormError">#ff3333</color>
+    <color name="TextColorBlack">#000000</color>
+    <color name="colorCompanyName">#0073ff</color>
+</resources>

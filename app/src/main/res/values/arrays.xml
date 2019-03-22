@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="blood_group">
+        <item>Blood Group</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>O+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O-</item>
+        <item>AB-</item>
+        <item>None</item>
+    </string-array>
+
+
+    <string-array name="employment_type">
+        <item>Employment Type</item>
+        <item>Contractual</item>
+        <item>Deputation</item>
+        <item>Outsourced</item>
+        <item>Permanent</item>
+        <item>Project Employee</item>
+        <item>Temporary</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="course_name">
+        <item>Course Name</item>
+        <item>MD</item>
+        <item>MS</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+</resources>

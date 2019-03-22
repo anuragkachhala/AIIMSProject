@@ -1,0 +1,161 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/custom_et_bg</item>
+        <item name="android:padding">@dimen/editTextPadding</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+        <item name="android:layout_marginBottom">@dimen/editTextMarginButton</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="FormErrorText" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/tv_error_padding_top</item>
+        <item name="android:paddingBottom">@dimen/tv_error_padding_bottom</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/tv_error_margin_right</item>
+        <item name="android:textColor">@color/ColorFormError</item>
+    </style>
+
+
+
+    <style name="MyCustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="TextViewHeading" parent="@android:style/TextAppearance.Widget.TextView">
+
+        <item name="android:textColor">@color/colorFormHeading</item>
+
+    </style>
+
+
+    <style name="TextViewLabelForm" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_marginTop">@dimen/tvFormLabelMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvFromLabelMarginBottom</item>
+        <item name="android:textColor">@color/colorTvLabelFrom</item>
+        <item name="android:textSize">@dimen/tvFromLabelTextSize</item>
+    </style>
+
+    <style name="TextViewFormValue" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_marginTop">@dimen/tvFormLabelMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvFromLabelMarginBottom</item>
+        <item name="android:textColor">@color/colorTvFromValue</item>
+        <item name="android:textSize">@dimen/tvFromValueSize</item>
+
+    </style>
+
+    <style name="tvFromLabel" parent= "@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_marginTop">@dimen/tvLabelFormMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvLabelFormMarginBottom</item>
+        <item name="android:textColor">@color/colorTvLabelFrom</item>
+        <item name="android:textSize">@dimen/tvLabelFromTextSize</item>
+
+    </style>
+
+
+    <style name="EditTextForm" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/form_et_bg</item>
+        <item name="android:padding">@dimen/etFormPadding</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+        <item name="android:layout_marginBottom">@dimen/etFormMarginBottom</item>
+        <item name="android:layout_marginTop">@dimen/etFormMarginTop</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+
+    <style name="customTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/tvInputLayoutMarinTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvInputLayouMarginBottom</item>
+
+
+    </style>
+
+
+    <style name="customTextView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/form_et_bg</item>
+        <item name="android:padding">@dimen/etFormPadding</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+
+    </style>
+
+
+
+    <style name="customImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">16dp</item>
+
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:tint">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="customButtom" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#d1d1d1</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+
+    <style name="TVDetailLabel" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTvFromValue</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+
+
+
+</resources>

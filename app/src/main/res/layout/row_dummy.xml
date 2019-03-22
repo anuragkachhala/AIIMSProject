@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PersonalDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/header_personal_details"
+        />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_applicant_name" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/et_applicant_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Name"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/form_et_bg"
+                    android:padding="8dp" />
+            </android.support.design.widget.TextInputLayout>
+            <!--<EditText
+                android:id="@+id/et_applicant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/form_et_bg"
+                android:padding="8dp" />-->
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_applicant_father_name" />
+
+            <EditText
+                android:id="@+id/et_applicant_father_name"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_applicant_mother_name" />
+
+            <EditText
+                android:id="@+id/et_applicant_mother_name"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--<TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_gender" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="@string/radio_male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_female" />
+
+            </RadioGroup>-->
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_dob" />
+
+            <TextView
+                android:id="@+id/tv_applicant_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:background="@drawable/form_et_bg"
+                android:padding="@dimen/etFormPadding"
+                android:text="12/10/12"
+                android:textSize="@dimen/editTextSize" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/designation" />
+
+            <EditText
+                android:id="@+id/et_designation"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/department" />
+
+            <EditText
+                android:id="@+id/et_department"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grade_pay" />
+
+            <EditText
+                android:id="@+id/et_grade_pay"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_joining" />
+
+            <TextView
+                android:id="@+id/tv_date_of_joining"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="01/01/1990" />
+
+            <!--<TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_nationality" />
+
+            <EditText
+                android:id="@+id/et_nationality"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters" />-->
+
+
+            <!-- <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_marital_status" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:background="@drawable/form_et_bg"
+                android:padding="@dimen/etFormPadding" />-->
+
+            <!--<LinearLayout
+                android:id="@+id/layout_spouse_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tvFromLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_reg_spouse_name" />
+
+                <EditText
+                    android:id="@+id/et_spouse_name"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>-->
+
+            <!-- <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_category" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:background="@drawable/form_et_bg"
+                android:padding="@dimen/etFormPadding" />-->
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/present_address" />
+
+            <EditText
+                android:id="@+id/et_present_address"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/permanent_address" />
+
+            <EditText
+                android:id="@+id/et_permanent_address"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/body_identification_marks" />
+
+            <EditText
+                android:id="@+id/et_body_identy_mark"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_group" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/blood_group"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:background="@drawable/form_et_bg"
+                android:padding="@dimen/etFormPadding" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no" />
+
+            <EditText
+                android:id="@+id/et_mobile_no"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/landline_no" />
+
+            <EditText
+                android:id="@+id/et_landline_no"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency_contact" />
+
+            <EditText
+                android:id="@+id/et_emergency_contact"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_id" />
+
+            <EditText
+                android:id="@+id/et_email_id"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/employment_type" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_employment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/employment_type"
+                android:layout_marginTop="@dimen/etFormMarginTop"
+                android:layout_marginBottom="@dimen/etFormMarginBottom"
+                android:background="@drawable/form_et_bg"
+                android:padding="@dimen/etFormPadding" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/for_project_employee" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/project_name" />
+
+            <EditText
+                android:id="@+id/et_project_name"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenure" />
+
+            <EditText
+                android:id="@+id/et_tenure"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/have_you_ever_received" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_yes" />
+
+            <EditText
+                android:id="@+id/et_if_yes_select"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_contact_number" />
+
+            <EditText
+                android:id="@+id/et_contact_no"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10" />
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_alternate_contact_number" />
+
+            <EditText
+                android:id="@+id/et_alt_contact_no"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10" />
+
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_email_id" />
+
+            <TextView
+                android:id="@+id/tv_applicant_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/form_et_bg"
+                android:padding="8dp"
+
+                />
+
+            <TextView
+                style="@style/tvFromLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reg_oh" />
+
+
+            <RadioGroup
+                android:id="@+id/radioHo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioHOYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="@string/radio_yes" />
+
+                <RadioButton
+                    android:id="@+id/radioHONo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/layout_oh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/tvFromLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_reg_types_of_disability" />
+
+                <EditText
+                    android:id="@+id/et_disability"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+
+                <TextView
+                    style="@style/tvFromLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_reg_percentage_of_disability" />
+
+                <EditText
+                    android:id="@+id/et_per_disability"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+
+            </LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/btn_personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorFormHeading"
+                android:text="@string/btn_personal_details"
+                android:textColor="@color/buttonTextColor" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

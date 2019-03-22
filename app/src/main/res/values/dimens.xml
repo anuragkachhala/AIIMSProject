@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_horizontal_padding">16dp</dimen>
+    <dimen name="layout_vertical_padding">16dp</dimen>
+    <dimen name="layout_horizontal_margin">16dp</dimen>
+    <dimen name="layout_vertical_margin">16dp</dimen>
+    <dimen name="editTextSize">16dp</dimen>
+    <dimen name="editTextPadding">10dp</dimen>
+    <dimen name="editTextMarginButton">8dp</dimen>
+    <dimen name="editTextMarginTop">8dp</dimen>
+
+    <dimen name="tvFormLabelMarginTop">2dp</dimen>
+    <dimen name="tvFromLabelTextSize">14dp</dimen>
+    <dimen name="tvFromValueSize">14dp</dimen>
+    <dimen name="tvFromLabelMarginBottom">2dp</dimen>
+
+    <dimen name="tvLabelFormMarginTop">8dp</dimen>
+    <dimen name="tvLabelFormMarginBottom">8dp</dimen>
+    <dimen name="tvLabelFromTextSize">14dp</dimen>
+
+    <dimen name="etFormPadding">12dp</dimen>
+    <dimen name="etFormMarginTop">8dp</dimen>
+    <dimen name="etFormMarginBottom">8dp</dimen>
+    <dimen name="spinnerPadding">16dp</dimen>
+
+    <dimen name="tv_error_padding_bottom">4dp</dimen>
+    <dimen name="tv_error_padding_top">2dp</dimen>
+    <dimen name="tv_error_margin_right">16dp</dimen>
+
+    <dimen name="tvErrorLayoutMarginLeft">135dp</dimen>
+
+
+    <dimen name="tvInputLayoutMarinTop">4dp</dimen>
+    <dimen name="tvInputLayouMarginBottom">4dp</dimen>
+
+    <dimen name="footer_text_size">16dp</dimen>
+    <dimen name="footer_padding">8dp</dimen>
+
+
+    <dimen name="header_image_width">60dp</dimen>
+    <dimen name="header_image_height">60dp</dimen>
+    <dimen name="header_title_text_size">16dp</dimen>
+    <dimen name="header_sub_title_text_size">12sp</dimen>
+
+
+    <dimen name="activity_horizontal_padding">16dp</dimen>
+    <dimen name="activity_vertical_padding">16dp</dimen>
+
+    <dimen name="employee_detail_row_padding">8dp</dimen>
+    <dimen name="employee_detail_text_size">12sp</dimen>
+    <dimen name="employee_detail_text_padding">8dp</dimen>
+
+</resources>

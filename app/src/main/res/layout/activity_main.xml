@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_AIIMS"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/aiims_logo" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_AIIMS"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/aiims_name"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/company_name"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:id="@+id/btn_employee_registration"
+            style="@style/customButtom"
+            android:text="@string/employee_registration" />
+
+        <Button
+            android:id="@+id/btn_student_registration"
+            style="@style/customButtom"
+            android:text="@string/student_registration" />
+
+
+        <Button
+            android:id="@+id/btn_login_admin"
+            style="@style/customButtom"
+            android:text="@string/btn_login_as_admin" />
+
+
+    </LinearLayout>
+
+    <include
+
+        android:id="@+id/company_name"
+        layout="@layout/layout_footer"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">AIIMSProject</string>
+
+    <string name="header_personal_details">Personal Details</string>
+    <string name="label_reg_applicant_name">Name</string>
+    <string name="label_reg_applicant_father_name">Father\'s Name</string>
+    <string name="label_reg_applicant_husband_name">Husband\'s Name</string>
+    <string name="label_reg_applicant_mother_name">Mother\'s Name</string>
+    <string name="label_reg_gender">Gender</string>
+    <string name="label_reg_dob">Date of Birth</string>
+    <string name="label_reg_nationality">Nationality</string>
+    <string name="label_reg_marital_status">Marital Status </string>
+    <string name="label_reg_spouse_name">Spouse Name</string>
+    <string name="label_reg_category">Category</string>
+    <string name="label_reg_contact_number">Contact Number</string>
+    <string name="label_reg_alternate_contact_number">Alternate Contact Number</string>
+    <string name="label_reg_email_id">E-Mail Id</string>
+    <string name="label_reg_oh">OH</string>
+    <string name="label_reg_types_of_disability">Types of Disability</string>
+    <string name="label_reg_percentage_of_disability">Percentage of Disability</string>
+    <string name="radio_yes">YES</string>
+    <string name="radio_no">NO</string>
+    <string name="radio_male">MALE</string>
+    <string name="radio_female">FEMALE</string>
+    <string name="btn_personal_details">Save Personal Details</string>
+
+    <string name="designation">Designation</string>
+    <string name="hint_roll_no">Roll No.</string>
+    <string name="hint_user_name">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="department">Department</string>
+    <string name="present_address">Present Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="grade_pay">Grade Pay</string>
+    <string name="hint_registration_no">Registration No.</string>
+    <string name="date_of_joining">Date of Joining</string>
+    <string name="body_identification_marks">Body Identification Mark</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="landline_no">Landline No.</string>
+    <string name="emergency_contact">Emergency Contact No.</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="email_id">Email-Id</string>
+    <string name="employment_type">Employment Type</string>
+    <string name="for_project_employee">For Project Employee</string>
+    <string name="check_address">Same as Present Address"</string>
+    <string name="project_name">Project Name</string>
+    <string name="tenure">Tenure</string>
+    <string name="have_you_ever_received">Have you ever received Id-card from IT cell ?</string>
+
+    <string name="if_yes">If Yes, Write reason (Only for reissuing ID-card)</string>
+    <string name="hint_pg_student">Speciality</string>
+    <string name="aiims">ALL INDIA INSTITUTE OF MEDICAL SCIENCE BHOPAL</string>
+    <string name="details_card">DETAILS REQUIRED TO ISSUE IDENTITY CARD</string>
+    <string name="form_heading_student">DETAILS REQUIRED TO ISSUE IDENTITY CARD (STUDENT)</string>
+    <string name="aiims_name">ALL INDIA INSTITUTE OF MEDICAL SCIENCE BHOPAL</string>
+    <string name="employee_registration">Employee Registration</string>
+    <string name="student_registration">Student Registration</string>
+    <string name="save_details">save personal details</string>
+    <string name="btn_login">Login</string>
+
+
+    <string name="label_pg_student">Are you post graduate?</string>
+
+
+    <string name="name_error">Please enter Name</string>
+    <string name="btn_login_as_admin">Login as admin</string>
+    <string name="name_length_error">Name should be 3-30 character</string>
+    <string name="father_name_length_error">Father Name should be 3-30 character</string>
+    <string name="mother_name_length_error">Mother Name should be 3-30 character</string>
+    <string name="father_name_error">Please enter Father\'s / Husband\'s Name </string>
+    <string name="mother_name_error">Please enter \Mother\'s Name</string>
+    <string name="date_of_birth_error">Please select Date of Birth</string>
+    <string name="designation_error">Please enter Designation</string>
+    <string name="department_error">Please enter Department</string>
+    <string name="grade_pay_error">Please enter Grade Pay</string>
+    <string name="date_of_joining_error">Please select Date of Joining</string>
+    <string name="present_address_error">Please enter Present Address</string>
+    <string name="permanent_address_erro">Please enter Permanent Address</string>
+    <string name="body_identy_mark_error">Please enter Body identification mark </string>
+    <string name="mobile_no_error">Please enter Mobile No. field </string>
+    <string name="mobile_no_valid">Please enter valid mobile No.</string>
+    <string name="landline_no_error">Please enter Landline No.</string>
+    <string name="landline_no_valid">Please enter valid Landline No.</string>
+    <string name="emergency_contact_error">Please enter Emergency Contact no. </string>
+    <string name="emergency_contact_valid">Please enter valid Emergency Contact</string>
+    <string name="email_error">Please enter Email Id.</string>
+    <string name="project_name_error">Please enter Project Name</string>
+    <string name="valid_email_address">Please enter valid Email Id</string>
+    <string name="err_tenure">Please enter Project Tenure</string>
+    <string name="if_yes_select_error">Please Write reason</string>
+    <string name="footer_company_name">© Copyright TekIT Solution</string>
+    <string name="err_select_employment_type">Please select Employment type</string>
+    <string name="err_select_course_name">Please select Course Name</string>
+    <string name="err_speciality">Please enter Speciality</string>
+    <string name="err_roll_no">Please enter Roll No.</string>
+    <string name="err_registration_no">Please enter Registration No.</string>
+
+
+    <string name="menu_get_excel">Get Excel</string>
+    <string name="menu_verify_form">Verify form</string>
+    <string name="menu_get_pdf">Get PDF</string>
+
+
+    <string name="msg_check_connection">Please check connection </string>
+
+    <string name="err_msg_enter_user_name">Please enter UserName</string>
+    <string name="err_msg_enter_password">Please enter Password</string>
+    <string name="err_msg_valid_user_name">Username is incorrect</string>
+    <string name="err_msg_valid_password">Password is incorrect</string>
+
+    <string name="toolbar_title_student_reg">Student Registration</string>
+    <string name="toolbar_title_employee_reg">Employee Registration</string>
+    <string name="toolbar_title_employee_details">Employee details</string>
+    <string name="toolbar_title_employee_list">Employee List</string>
+
+
+</resources>
